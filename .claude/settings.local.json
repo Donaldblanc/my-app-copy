@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\('peerDeps:', json.dumps\\(p.get\\('peerDependencies',{}\\)\\)\\)\")",
+      "Bash(python3 -c \"import sys,json; p=json.load\\(sys.stdin\\); print\\('version:', p.get\\('version'\\)\\)\")",
+      "Bash(npm ls *)",
+      "Bash(npm uninstall *)",
+      "Bash(npm install *)",
+      "Bash(npx jest *)",
+      "Bash(npx prisma *)",
+      "Bash(git -C /Users/donaldblanc/Desktop/claudeTest/todo-app show d9ccd35 --name-only)"
+    ]
+  }
+}
